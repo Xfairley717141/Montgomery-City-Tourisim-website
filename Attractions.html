@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+	<style>
+	body{
+	background-color:#DAAD86;
+	font-family: Times New Roman;
+	}
+	#more {display: none;}
+	a{
+		color: #8D8741;
+	
+	}
+	</style>
+	<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+    <head>
+	<h1>Attractions</h1>
+	</head>
+	
+	<body>
+	<ol>
+		<li><h3> <a href ="https://www.montgomeryzoo.com" >Montgomery Zoo</a></h3></li>
+			<p>Penetrate deep into the jungles of South America. Travel the savannahs of Africa or the hilltops of Asia. Venture the tall grasses of the North American plains. See the Zebras graze on the plains while tigers roam nearby. Or just visit your Montgomery Zoo and see it all. If you haven’t been to the Zoo in a while,<span id="dots">...</span><span id="more"> you are missing out on a fun-packed and educational adventure. Our residents include over 500 animals from five different continents, all housed in natural, barrier-free habitats. The Zoo spans over 40 beautifully landscaped acres, offering you a magnificent view of exotic wildlife and endangered species. By leisurely stroll, or with a ride on the miniature train, the Montgomery Zoo is a sight to see!
+From the new African elephants and their amazing habitat to the roaring lions and zebra, the Montgomery Zoo is the place to be. Eat lunch with the giraffes! Share your ice cream with a bison! Our Overlook Cafe is surrounded by animals, offering a view unique to the Zoo. Take an adventurous train ride while seeing the sights of the Zoo. From the train you can see many of the favorite exhibits, as well as the Zoo’s lake which is inhabited by a variety of birds and water fowl. Take a stroll through the flight free aviary. The aviary offers the birds the freedom to fly and roam, allowing you a more intimate look. The aviary houses a variety of birds that are native to the South American Tropics. The colors and diversity will completely amaze you!
+The reptile house is home to some of the world's most exotic snakes and reptiles. All are nested in natural settings, offering an up close and personal view, from a safe distance.
+And while you are visiting the Zoo, don’t forget about the Mann Museum. The museum hosts over 275 exhibits of wildlife, various fresh and saltwater fish, reptiles and insects that are found in North America. It also houses over 70 exhibits that are mounted in life size. The museum displays are unique in that the visitor can view the exhibit from three sides, under special lighting. Visitors also have the opportunity to hear natural sounds of the many North American animals.</p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+			<p> 
+				<ul>
+					<li>Adults (13 years old or older): $17</li>
+					<li>Children (3 - 12 years of age): $13</li>
+					<li>Toddlers (2 years old or younger): FREE</li>
+					<li>Seniors (65 years old or older): $15</li>
+					<li>AAA and Military Adult: $16
+						AAA and Military discounts must be redeemed on-site, not available for online purchases</li>
+					<li>AAA and Military Children: $12
+						AAA and Military discounts must be redeemed on-site, not available for online purchases</li>
+					<li>Montgomery Zoo members: FREE
+						All Montgomery Zoo adult members must present a photo ID to gain access to the Zoo/Museum using their membership. View Membership information.</li>
+				</ul>
+			</p>	
+		<li><h3> <a href="http://www.gokartingmontgomery.com/home.html" >Go Karting Montgomery</a></h3></li>
+			<p> Its time to be fun! At Go Karting Montgomery there are more fun options to do then the obivous. At this location you can play mini golf and laser tagging! Prices varies for kids track and adults.
+			<strong>Anyone behaving badly will be ejected and banned. Any driver who jumps the rails on our track will be dismissed immediately, no exceptions.</strong>
+			</p>
+				<ul class ="gKarting">
+					<li>Go Karting: 10 minutes <br>
+					Members: $10 <br>
+					Non-members: $20 <br></li>
+					<li>Indoor Kid's Track: 5 minutes <br>
+					Members: $6<br>
+					Non-members:$12<br></li>
+					<li>Laser Tag:10 minutes<br>
+					Members:$10<br>
+					Non-members:$20<br></li>
+					<li>Mini Golf:30 minutes<br>
+					Members:$6<br>
+					Non-members:$12<br></li>
+					<li>Membership:<br>
+					$10 for one person<br>
+					$20 for family of 4<br>
+					$49 for group of 10<br></li>
+				</ul>
+		<li><h3><a href="http://www.gokartingmontgomery.com/home.html"></h3></li>
+		<li><h3>(Lakes & Fishing ect.)</h3></li>
+		<li><h3></h3></li>
+		<li><h3></h3></li>
+	</ol>
+	</body>
+</html>
