@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+	<style>
+	html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #BC986A;
+}
+
+section {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 15px;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  will-change: transform;
+}
+section div {
+  width: 100%;
+  height: 400px;
+  background: #DAAD86;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vw;
+}
+section div:last-child {
+  margin-bottom: 0;
+}
+
+	</style>
+	
+	
+	
+    <head>
+	</head>
+	
+	<body>
+	<section>
+	<p>These stores are located all over the Montgomery area
+	so giving close locations will be unrealistic</p>
+	<div>Publix</div>
+	<div>Target</div>
+	<div>Walmart</div>
+	<div>Piggly Wiggly</div>
+	<div>Winn-Dixie</div>
+	<div>Cash Saver</div>
+
+</section>
+	</body>
+	<script>
+	const section = document.querySelector('section');
+
+let currentPos = window.pageYOffset;
+
+const update = () => {
+  const newPos = window.pageYOffset;
+  const diff = newPos - currentPos;
+  const speed = diff * 0.35;
+
+  section.style.transform = `skewY(${speed}deg)`;
+
+  currentPos = newPos;
+
+  requestAnimationFrame(update);
+};
+
+update();
+	</script>
+</html>

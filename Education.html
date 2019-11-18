@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+	<style>
+		body,html{margin:0;padding:0;height:100%;}
+body{background:#BC986A;box-shadow: inset 0 0 20vmin 0 #585247;}
+.wrap{
+  position:relative;
+  width:80vmin; height:80vmin;
+  margin:0 auto;
+  background:inherit;
+  transform:scale(0.2) translatez(0px);
+  opacity:0;
+  transition:transform .5s, opacity .5s;
+}
+a{
+  position:absolute;
+  left:0; top:0;
+  width:47.5%; height:47.5%;
+  overflow:hidden;
+  transform:scale(.5) translateZ(0px);
+  background:#585247;
+}
+a div{
+  height:100%;
+  background-size:cover;
+  opacity:.5;
+  transition:opacity .5s;
+  border-radius:inherit;
+}
+a:nth-child(1){
+  border-radius:40vmin 0 0 0;
+  transform-origin: 110% 110%;
+  transition:transform .4s .15s;
+}
+a:nth-child(1) div{
+  background-image:url('http://p12cdn4static.sharpschool.com/userfiles/servers/server_396542/image/dsc01709.jpg');
+color:#FBEEC1;
+  }
+a:nth-child(2){
+  border-radius:0 40vmin 0 0;
+  left:52.5%;
+  transform-origin: -10% 110%;
+  transition:transform .4s .2s;
+}
+a:nth-child(2) div{
+  background-image:url('https://www.gannett-cdn.com/presto/2018/08/08/PMOY/de596891-9b41-466d-b356-a21290e52889-goodwyn11.jpg?width=540&height=&fit=bounds&auto=webp');
+color:#FBEEC1;
+  }
+a:nth-child(3){
+  border-radius:0 0 0 40vmin;
+  top:52.5%;
+  transform-origin: 110% -10%;
+  transition:transform .4s .25s;
+}
+a:nth-child(3) div{
+  background-image:url('http://p12cdn4static.sharpschool.com/userfiles/servers/server_401138/image/gallery/highland_gardens_slider_01.jpg');
+color:#FBEEC1;
+  }
+a:nth-child(4){
+  border-radius:0 0 40vmin 0;
+  top:52.5%; left:52.5%;
+  transform-origin: -10% -10%;
+  transition:transform .4s .3s;
+}
+a:nth-child(4) div{
+  background-image: url('https://www.collegetuitioncompare.com/images/colleges/101435-huntingdon-college.jpg');
+color:#FBEEC1;
+  }
+a:nth-child(5){
+  width:55%;height:55%;
+  left:22.5%; top:22.5%;
+  border-radius:50vmin;
+  box-shadow:0 0 0 5vmin #BC986A;
+  transform:scale(1);
+}
+a:nth-child(5) div{
+  background-image: url('https://i.pinimg.com/originals/9a/66/f7/9a66f7f0d19ef49a094278977b5d2a4e.jpg');
+}
+span{
+  position:relative;
+  display:block;
+  margin:0 auto;
+  top:45vmin;
+  width:10vmin; height:10vmin;
+  border-radius:100%;
+  background:#585247;
+  transform:translateZ(0px);
+}
+span span{
+  position:absolute;
+  width:60%;height:3px;
+  background:#8D8741;
+  left:20%; top:50%;
+  border-radius:0;
+}
+span span:after, span span:before{
+  content:'';
+  position:absolute;
+  left:0; top:-1.5vmin;
+  width:100%; height:100%;
+  background:inherit;
+}
+span span:after{
+  top:1.5vmin;
+}
+span:hover + .wrap, .wrap:hover{
+  transform:scale(.8) translateZ(0px);
+  opacity:1;
+}
+span:hover + .wrap a, .wrap:hover a{
+  transform:scale(1) translatez(0px);
+}
+a:hover div{
+  opacity:1;
+  transform:translatez(0px);
+}
+
+	</style>
+
+    <head>
+	<title>Education</title>
+	</head>
+	
+	<body>
+	<span><span></span></span>
+<div class="wrap">
+  <a href="https://www.schooldigger.com/go/AL/city/Montgomery/search.aspx?level=3"><div>High School</div></a>
+  <a href="https://www.schooldigger.com/go/AL/city/Montgomery/search.aspx?level=2"><div>Middle School</div></a>
+  <a href="https://www.schooldigger.com/go/AL/city/Montgomery/search.aspx"><div>Elementry School</div></a>
+  <a href="https://www.google.com/search?rlz=1C1CHBF_enUS745US745&ei=8nPSXc34MsOq_QaT3oOgCw&q=colleges+in+montgomery+al&oq=coll&gs_l=psy-ab.3.0.0i67l2j0i273j0i131j0j0i131j0l2j0i67j0.2904.3811..5667...0.1..0.105.338.3j1......0....1..gws-wiz.......0i71.C_jB4evt4iU&ibp=htl;splinter&sa=X&ved=2ahUKEwj3rOSYyPPlAhUChuAKHSFqCswQiYsCKAF6BAgMEBI#htivrt=splinter&htidocid=3KObdyPoMO1DCcNHAAAAAA%3D%3D&fpstate=tldetail"><div>College</div></a>
+  <a href="#"><div></div></a>
+</div>
+
+	</body>
+	
+	<script>
+	</script>
+</html>
